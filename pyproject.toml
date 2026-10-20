@@ -33,7 +33,7 @@ full = [
     # No win_arm64 wheel exists; Windows on ARM still builds from source.
     # Re-check https://pypi.org/pypi/litellm/<version>/json before dropping
     # an exclusion.
-    "litellm>=1.83.0,!=1.92.0,!=1.92.1,!=1.93.0,!=1.93.1,!=1.94.0,!=1.94.1,!=1.95.0",
+    "litellm!=1.92.0,!=1.92.1,!=1.93.0,!=1.93.1,!=1.94.0,!=1.94.1,!=1.95.0,>=1.81.0",
     # gepa.lm.LM passes num_retries to litellm, whose retry path imports tenacity
     # without declaring it as a dependency.
     "tenacity>=8.0.0",
